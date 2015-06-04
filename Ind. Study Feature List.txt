@@ -1,0 +1,81 @@
+Multitasking Independent Study Feature List:
+
+To access the website use:
+http://www.itss.brockport.edu/~mslom1/Multitasking/index.html
+
+2/20/15
+- Create version 0.1 of website on the holly2 server
+Version 0.1 includes:
+1. A basic home page.
+2. A basic multitasking factors page.
+3. Proper navigation between pages.
+4. Properly styled layout.
+
+2/27/15
+- Create version 0.2 of website on the holly2 server
+Version 0.2 includes:
+1. A copy of the project plan text into the homepage.
+2. The home page icon that is turned into a watermark. 
+3. Better alignment of factors --> put in a table.
+4. Checkboxes that are before the text of the factor checkboxes.
+5. Better looking navigation buttons.
+
+3/6/15
+- Create version 0.3 of website on the holly2 server
+Version 0.3 includes:
+1. Factors that have multiple subfactors put into dropdown lists.
+2. A clear button that removes the checkbox selections.
+3. Removed borders from the table.
+4. Better style for pages.
+5. A text description on top of the factors page that says:
+Please select the independent factors and dependent factors by either 
+checking the appropriate box and or selecting the appropriate subfactor in 
+the dropdown box.
+6. Improvements in the ability to view the page content properly when the window resizes.
+7. A footer that has a last updated feature with the latest date uploaded.
+8. Images of multitasking with technology on homepage.
+
+3/13/15
+- Create version 0.4 of website on the holly2 server
+Version 0.4 includes:
+-Dropdown boxes that are under labels.
+-When the user hits submit, it just brings them to a new page with the form's data dragged into the new page.
+-Fixes in the html for the form. Instead of the .asp file for the action you need to have a .php file.
+-Changes in the value/name of each checkbox in order to get the data from it properly.
+
+3/27/15
+- Create version 0.5 of website on the holly2 server
+Version 0.5 includes:
+- Clean transition of form data into the result page.
+
+4/3/15
+- Create version 0.6 of website on the holly2 server
+Version 0.6 includes:
+- Reformatted output for result page as comma separated.
+- Dropdown output in the result page.
+
+4/13/15
+- Create version 0.7 of website on the holly2 server
+Version 0.7 includes:
+- Reformatted output for result page. (Have them listed from top to bottom instead of on one line.)
+- Output is written to a file to store. (Read book)
+*******************************************************************************
+-IMPORTANT NOTE: Make sure you set the folder and files to permission 777! You had a problem
+where the file was not being created because you did not have write permissions!
+*******************************************************************************
+- NOTE: to pass the first form info to the final script you need to put in the result.php
+form a bunch of hidden fields that store the values of the factors.php form.
+Then you can just copy what you did before and send the data to the script!
+http://php.net/manual/en/function.file-put-contents.php 
+- **************
+Make the output a .xml file instead of a .txt file. Also make tags in it like in w3 schools for an xml doc.
+You want <filename>date</filename><Age>Age</Age> and so on in order to make it easy to convert it to a database version! 
+*****************
+
+4/24/15
+- Create version 1.0 of website on the holly2 server
+Version 1.0 includes:
+-Output that is sent to an .xml file instead of a .txt in order to pull data easily.
+-Better file naming for output files so that spaces are not included.
+-Files that are sent to Dr. Kamal's folder instead of my own. ~mkamal/Multitasking
+-Better format for form output on Results page.

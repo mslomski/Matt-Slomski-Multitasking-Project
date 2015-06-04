@@ -1,0 +1,6 @@
+IMPORTANT NOTE:
+
+Sometimes holly may reset permissions to files and you may not be able to create files.
+
+If the file is not being created, check the permissions of the folder and 
+the result.php and script.php files. They need 'write' permissions. Use chmod.
