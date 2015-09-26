@@ -3,244 +3,268 @@
 <!-- Created by: Matt Slomski and Dr. Mehruz Kamal Spring 2015 Semester -->
 
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8">
-
   <title>Brockport Multitasking</title>
-
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-  
+
   <style>
- body {
- background-color: #023727;
- }
-ul {
-	background-color: #023727;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-th {
-
-   color:red;
-
-}
-
-
-a:link, a:visited {
-    display: block;
-    width: 130px;
-	height: 30px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #000;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 40px;
-     font-size: 12px;
-     border:3px solid white;
-    
-}
-
-a:hover, a:active {
-    background-color: #333333;
-}
-
-div {
-	background-color: #023727;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-	background-origin: border-box;
-	color:white;
-   min-width: 1000px;
-}
-
-h5 {
-	color:white;
-}
-
-h1, h3 {
-	color:blue;
-}
-
-</style>
+    body {
+      background-color: #023727;
+    }
+    ul {
+      background-color: #023727;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    li {
+      float: left;
+    }
+    th {
+      color:red;
+    }
+    a:link, a:visited {
+      display: block;
+      width: 130px;
+      height: 30px;
+      font-weight: bold;
+      color: #FFFFFF;
+      background-color: #000;
+      text-align: center;
+      padding: 4px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 40px;
+      font-size: 12px;
+      border:3px solid white;
+    }
+    a:hover, a:active {
+      background-color: #333333;
+    }
+    div {
+      background-color: #023727;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      color:white;
+      min-width: 1000px;
+    }
+    h5 {
+      color:white;
+    }
+    h1, h3 {
+      color:blue;
+    }
+  </style>
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  
+
 </head>
 
-<body\>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="factors.html">Multitasking Factors</a></li>
-  </ul>
-</nav>
-        
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="factors.html">Multitasking Factors</a></li>
+    </ul>
+  </nav>
+
   <hr/>
   <hr/>
-  <center>
+
+  <div align="center">
 
   <div style="height:130px; background:#f1f1f1; border-bottom:1px solid #7ebbe4">
- <h1> <u>Independent vs Dependent Factors</u></h1>
- <h3> Please select the independent factors and dependent factors by either 
-checking the appropriate box or selecting the appropriate subfactor in 
-the dropdown box. </h3>
-</div>
- <div style="height:600px; background:#7ebbe4; border-top:1px solid #b0d3ea">
-<br>
-<form name="myform" action="result.php" method= "post">
 
-<table style="width:50%">
-  <tr>
-    <th>Independent Factors</th>
-    <th>Dependent Factors</th>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="Age" class="form-control" value="Age"/> Age</td>
-    <td>Performance: <br><select name="Performance" value ="Performance">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Number of Errors">Number of Errors</option>
-    <option value="GPA/Grades"> GPA/Grades</option>
-    <option value="Academic Goals and Achievements">Academic Goals and Achievements</option>
-  </select></td>		
-  </tr>
-  <tr>
-    <td>Motivation and Intention: <br><select name="Motivation" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Level of Interest">Level of Interest</option>
-    <option value="Level of Boredom">Level of Boredom</option>
-    <option value="Level of Fatigue">Level of Fatigue</option>
-  </select> </td>
-    <td>Processing of Information: <br><select name="Processing" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Recall, Retention, & Memory">Recall, Retention, & Memory</option>
-    <option value="Effectiveness of Study method by individuals">Effectiveness of Study method by individuals</option>
-  </select></td>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="Similarity" class="form-control" value="Similarity of Modalities"/>Similarity of Modalities/Tasks</td>
-    <td><input type="checkbox" name="Teaching" class="form-control" value="Teaching Methods"/>Teaching Methods</td>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="External" class="form-control" value="External Distractions"/>External Distractions</td>
-    <td><input type="checkbox" name="Learning" class="form-control" value="Learning / Learning Processes"/>Learning / Learning Processes</td>		
-  </tr>
-  <tr>
-    <td>Practice/Training: <br><select name="Practice" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Repetition of Tasks">Repetition of Tasks</option>
-    <option value="Frequency of Technology Use">Frequency of Technology Use</option>
-    <option value="Frequency of Multitasking">Frequency of Multitasking</option>
-  </select></td>
-    <td><input type="checkbox" name="Attention" class="form-control" value="Attention/Level of Focus"/>Attention/Level of Focus</td>		
-  </tr>
-  <tr>
-    <td>Social Factors: <br><select name="Social" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Gender">Gender</option>
-    <option value="Class Status">Class Status</option>
-    <option value="International vs Local/Location">International vs Local/Location</option>
-    <option value="Socioeconomic Status">Socioeconomic Status</option>
-    <option value="Race/Ethnicity">Race/Ethnicity</option>
-    <option value="Highest Education of Parent(s)">Highest Education of Parent(s)</option>
-    <option value="Personality Characteristics">Personality Characteristics</option>
-    <option value="Household Income">Household Income</option>
-    <option value="Academic Discipline/Major">Academic Discipline/Major</option>
-  </select></td>
-    <td><input type="checkbox" name="Relationships" class="form-control" value="Relationships"/>Relationships</td>		
-  </tr>
-  <tr>
-    <td>Time Factors: <br><select name="Time" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Demands of Time">Demands of Time</option>
-    <option value="Time Constraints">Time Constraints</option>
-    <option value="Time Management Skills">Time Management Skills</option>
-    <option value="Amount of Time Spent">Amount of Time Spent</option>
-  </select></td>
-    <td>Productivity: <br><select name="Productivity" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Speed/Duration(Time)">Speed/Duration(Time)</option>
-    <option value="Efficiency">Efficiency</option>
-  </select></td>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="Availability" class="form-control" value="Availability of Media"/>Availability of Media</td>
-    <td><input type="checkbox" name="Satisfaction" class="form-control" value="Satisfaction"/>Satisfaction</td>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="Number" class="form-control" value="Number of Tasks or Media"/>Number of Tasks or Media</td>
-    <td><input type="checkbox" name="Health" class="form-control" value="Health"/>Health</td>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="Difficulty" class="form-control" value="Difficulty of Tasks"/>Difficulty of Tasks</td>
-    <td><input type="checkbox" name="Importance" class="form-control" value="Assessing Importance of Information"/>Assessing Importance of Information</td>		
-  </tr>
-  <tr>
-    <td><input type="checkbox" name="Unstructured_Structured" class="form-control" value="Unstructured vs Strucutred Use of Technology"/>Unstructured vs Strucutred Use of Technology</td>
-    <td><input type="checkbox" name="Distract" class="form-control" value="Distractibility"/>Distractibility</td>		
-  </tr>
-  <tr>
-    <td>Metacognition: <br><select name="Metacognition" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Ability to Allocate Resources">Ability to Allocate Resources</option>
-    <option value="Self-Monitoring/Self-Regulation">Self-Monitoring/Self-Regulation</option>
-    <option value="Perception">Perception</option>
-  </select></td>
-    <td></td>		
-  </tr>
+  <h1><u>Independent vs Dependent Factors</u></h1>
+
+  <h3>
+    Please select the independent factors and dependent factors by either
+    checking the appropriate box or selecting the appropriate subfactor in
+    the dropdown box.
+  </h3>
+
+  </div>
+
+  <div style="height:600px; background:#7ebbe4; border-top:1px solid #b0d3ea">
+
+  <br />
+
+  <form name="myform" action="result.php" method= "post">
+
+  <table style="width:50%">
     <tr>
-    <td>Mental Factors: <br><select name="Mental_Factors" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Planning">Planning</option>
-    <option value="Prioritizing tasks">Prioritizing tasks</option>
-    <option value="Sense of Familiarity">Sense of Familiarity</option>
-  </select></td>
-    <td></td>		
-  </tr>
-  <tr>
-  <td><input type="checkbox" name="Types_Software" class="form-control" value="Types of Software Technologies"/>Types of Software Techologies</td>
-   <td></td>
-  </tr>
-  <tr>
-  <td>Pre-cursors: <br><select name="Pre_Cursors" class="form-control">
-    <option value="">(Select the appropriate subfactor here...)</option>
-    <option value="Sense of Connectivity">Sense of Connectivity</option>
-    <option value="Sensation Seeking">Sensation Seeking</option>
-    <option value="Satisfaction with aspects of One's Life">Satisfaction with aspects of One's Life</option>
-    <option value="Gratifications">Gratifications</option>
-    <option value="Individual Needs (Emotional, Habitual, & Cognitive)">Individual Needs (Emotional, Habitual, & Cognitive)</option>
-  </select></td>
-  <td></td>
-  </tr>
-  
-</table>
-<br>     
+      <th>Independent Factors</th>
+      <th>Dependent Factors</th>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Age" class="form-control" value="Age"/> Age</td>
+      <td>Performance: <br />
+        <select name="Performance" value ="Performance">
+          <option value="">(Select the appropriate subfactor here...)</option>
+          <option value="Number of Errors">Number of Errors</option>
+          <option value="GPA/Grades"> GPA/Grades</option>
+          <option value="Academic Goals and Achievements">Academic Goals and Achievements</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+    <td>Motivation and Intention: <br />
+      <select name="Motivation" class="form-control">
+        <option value="">(Select the appropriate subfactor here...)</option>
+        <option value="Level of Interest">Level of Interest</option>
+        <option value="Level of Boredom">Level of Boredom</option>
+        <option value="Level of Fatigue">Level of Fatigue</option>
+      </select>
+    </td>
+    <td>Processing of Information: <br />
+      <select name="Processing" class="form-control">
+        <option value="">(Select the appropriate subfactor here...)</option>
+        <option value="Recall, Retention, & Memory">Recall, Retention, &amp; Memory</option>
+        <option value="Effectiveness of Study method by individuals">Effectiveness of Study method by individuals</option>
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Similarity" class="form-control" value="Similarity of Modalities"/>Similarity of Modalities/Tasks</td>
+      <td><input type="checkbox" name="Teaching" class="form-control" value="Teaching Methods"/>Teaching Methods</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="External" class="form-control" value="External Distractions"/>External Distractions</td>
+      <td><input type="checkbox" name="Learning" class="form-control" value="Learning / Learning Processes"/>Learning / Learning Processes</td>
+    </tr>
+    <tr>
+      <td>Practice/Training: <br />
+        <select name="Practice" class="form-control">
+          <option value="">(Select the appropriate subfactor here...)</option>
+          <option value="Repetition of Tasks">Repetition of Tasks</option>
+          <option value="Frequency of Technology Use">Frequency of Technology Use</option>
+          <option value="Frequency of Multitasking">Frequency of Multitasking</option>
+        </select>
+      </td>
+      <td><input type="checkbox" name="Attention" class="form-control" value="Attention/Level of Focus"/>Attention/Level of Focus</td>
+    </tr>
+    <tr>
+      <td>Social Factors: <br />
+        <select name="Social" class="form-control">
+          <option value="">(Select the appropriate subfactor here...)</option>
+          <option value="Gender">Gender</option>
+          <option value="Class Status">Class Status</option>
+          <option value="International vs Local/Location">International vs Local/Location</option>
+          <option value="Socioeconomic Status">Socioeconomic Status</option>
+          <option value="Race/Ethnicity">Race/Ethnicity</option>
+          <option value="Highest Education of Parent(s)">Highest Education of Parent(s)</option>
+          <option value="Personality Characteristics">Personality Characteristics</option>
+          <option value="Household Income">Household Income</option>
+          <option value="Academic Discipline/Major">Academic Discipline/Major</option>
+        </select>
+      </td>
+    <td><input type="checkbox" name="Relationships" class="form-control" value="Relationships"/>Relationships</td>
+    </tr>
+    <tr>
+      <td>Time Factors: <br />
+        <select name="Time" class="form-control">
+          <option value="">(Select the appropriate subfactor here...)</option>
+          <option value="Demands of Time">Demands of Time</option>
+          <option value="Time Constraints">Time Constraints</option>
+          <option value="Time Management Skills">Time Management Skills</option>
+          <option value="Amount of Time Spent">Amount of Time Spent</option>
+        </select>
+      </td>
+      <td>Productivity: <br />
+        <select name="Productivity" class="form-control">
+          <option value="">(Select the appropriate subfactor here...)</option>
+          <option value="Speed/Duration(Time)">Speed/Duration(Time)</option>
+          <option value="Efficiency">Efficiency</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Availability" class="form-control" value="Availability of Media"/>Availability of Media</td>
+      <td><input type="checkbox" name="Satisfaction" class="form-control" value="Satisfaction"/>Satisfaction</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Number" class="form-control" value="Number of Tasks or Media"/>Number of Tasks or Media</td>
+      <td><input type="checkbox" name="Health" class="form-control" value="Health"/>Health</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Difficulty" class="form-control" value="Difficulty of Tasks"/>Difficulty of Tasks</td>
+      <td><input type="checkbox" name="Importance" class="form-control" value="Assessing Importance of Information"/>Assessing Importance of Information</td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Unstructured_Structured" class="form-control" value="Unstructured vs Strucutred Use of Technology"/>
+        Unstructured vs Strucutred Use of Technology</td>
+      <td><input type="checkbox" name="Distract" class="form-control" value="Distractibility"/>Distractibility</td>
+    </tr>
+    <tr>
+      <td>Metacognition: <br />
+        <select name="Metacognition" class="form-control">
+        <option value="">(Select the appropriate subfactor here...)</option>
+        <option value="Ability to Allocate Resources">Ability to Allocate Resources</option>
+        <option value="Self-Monitoring/Self-Regulation">Self-Monitoring/Self-Regulation</option>
+        <option value="Perception">Perception</option>
+        </select>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mental Factors: <br />
+        <select name="Mental_Factors" class="form-control">
+          <option value="">(Select the appropriate subfactor here...)</option>
+          <option value="Planning">Planning</option>
+          <option value="Prioritizing tasks">Prioritizing tasks</option>
+          <option value="Sense of Familiarity">Sense of Familiarity</option>
+        </select>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><input type="checkbox" name="Types_Software" class="form-control" value="Types of Software Technologies"/>Types of Software Techologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pre-cursors: <br />
+      <select name="Pre_Cursors" class="form-control">
+        <option value="">(Select the appropriate subfactor here...)</option>
+        <option value="Sense of Connectivity">Sense of Connectivity</option>
+        <option value="Sensation Seeking">Sensation Seeking</option>
+        <option value="Satisfaction with aspects of One's Life">Satisfaction with aspects of One's Life</option>
+        <option value="Gratifications">Gratifications</option>
+        <option value="Individual Needs (Emotional, Habitual, & Cognitive)">Individual Needs (Emotional, Habitual, &amp; Cognitive)</option>
+      </select>
+      </td>
+      <td></td>
+    </tr>
+
+  </table>
+  <br>
   <input type="submit" value="Submit">
   <input type="reset" name="Un_CheckAll" value="Clear">
-</form>
-</div>
-<div style="height:30px; background:#f1f1f1; border-top:1px solid #4c93c2"></div>
-</center>
-<hr/>
-<hr/>
-<footer background-color: #009900;>
-<h5><b>Created by Matthew Slomski and Dr. Mehruz Kamal</b></h5>
-<script language="Javascript">
-var str = "Last updated: " + document.lastModified +"";
-var result =str.fontcolor("white");
-document.write(result);
-</SCRIPT>
-</footer>
+  </form>
+  </div>
+
+  <div style="height:30px; background:#f1f1f1; border-top:1px solid #4c93c2"></div>
+
+  </div>
+
+  <hr/>
+  <hr/>
+
+  <footer background-color: #009900;>
+    <h5>Created by Matthew Slomski and Dr. Mehruz Kamal</h5>
+
+    <script language="Javascript">
+      var str = "Last updated: " + document.lastModified +"";
+      var result =str.fontcolor("white");
+      document.write(result);
+    </script>
+  </footer>
 </body>
 </html>
