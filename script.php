@@ -44,12 +44,37 @@ echo "Your Multitasking data has been sent to: " . date("Y-m-d_h-i-sa") . ".xml"
 $name = date("Y-m-d_h-i-sa");
 
 // Make new file based on the date the form was submitted.
-$output = "-----Selected Independent Factors----- \r\n" . "<Age>" . $Age . "</Age>\r\n<Motivaton>" . $Motivation . "</Motivation>\r\n<Similarity>" . $Similarity . "</Similarity>\r\n<External>" . $External . "</External>\r\n<Practice>" . $Practice . "</Practice>\r\n<Social>"
-   . $Social . "</Social>\r\n<Time>" . $Time . "</Time>\r\n<Availability>" . $Availability . "</Availability>\r\n<Number>" . $Number . "</Number>\r\n<Difficulty>" . $Difficulty . "</Difficulty>\r\n<Unstructured_Structured>" . $Unstructured_Structured
-   . "</Unstructured_Structured>\r\n<Metacognition>" . $Metacognition . "</Metacognition>\r\n<Mental_Factors>" . $Mental_Factors . "</Mental_Factors>\r\n<Types_Software>" . $Types_Software . "</Types_Software>\r\n<Pre_Cursors>" . $Pre_Cursors . "</Pre_Cursors>\r\n\r\n-----Selected Dependent Factors-----\r\n<Performance>"
-   . $Performance . "</Performance>\r\n<Processing>" . $Processing . "</Processing>\r\n<Teaching>" . $Teaching . "</Teaching>\r\n<Learning>" . $Learning . "</Learning>\r\n<Attention>" .  $Attention . "</Attention>\r\n<Relationships>" . $Relationships . "</Relationships>\r\n<Productivity>"
-   . $Productivity . "</Productivity>\r\n<Satisfaction>" . $Satisfaction . "</Satisfaction>\r\n<Health>" . $Health . "</Health>\r\n<Importance>" . $Importance . "</Importance>\r\n<Distract>" . $Distract
-   . "</Distract>\r\n\r\n-----Multitasking Notes-----\r\n<Notes>" . $Notes . "</Notes>";
+$output = "-----Selected Independent Factors----- \r\n" .
+  "<Age>" . $Age . "</Age>\r\n
+  <Motivaton>" . $Motivation . "</Motivation>\r\n
+  <Similarity>" . $Similarity . "</Similarity>\r\n
+  <External>" . $External . "</External>\r\n
+  <Practice>" . $Practice . "</Practice>\r\n
+  <Social>"   . $Social . "</Social>\r\n
+  <Time>" . $Time . "</Time>\r\n
+  <Availability>" . $Availability . "</Availability>\r\n
+  <Number>" . $Number . "</Number>\r\n
+  <Difficulty>" . $Difficulty . "</Difficulty>\r\n
+  <Unstructured_Structured>" . $Unstructured_Structured . "</Unstructured_Structured>\r\n
+  <Metacognition>" . $Metacognition . "</Metacognition>\r\n
+  <Mental_Factors>" . $Mental_Factors . "</Mental_Factors>\r\n
+  <Types_Software>" . $Types_Software . "</Types_Software>\r\n
+  <Pre_Cursors>" . $Pre_Cursors . "</Pre_Cursors>\r\n\r\n
+  -----Selected Dependent Factors-----\r\n
+  <Performance>" . $Performance . "</Performance>\r\n
+  <Processing>" . $Processing . "</Processing>\r\n
+  <Teaching>" . $Teaching . "</Teaching>\r\n
+  <Learning>" . $Learning . "</Learning>\r\n
+  <Attention>" .  $Attention . "</Attention>\r\n
+  <Relationships>" . $Relationships . "</Relationships>\r\n
+  <Productivity>" . $Productivity . "</Productivity>\r\n
+  <Satisfaction>" . $Satisfaction . "</Satisfaction>\r\n
+  <Health>" . $Health . "</Health>\r\n
+  <Importance>" . $Importance . "</Importance>\r\n
+  <Distract>" . $Distract . "</Distract>\r\n\r\n
+  -----Multitasking Notes-----\r\n
+  <Notes>" . $Notes . "</Notes>";
+  
 $file = date("Y-m-d_h-i-sa") . ".xml";
 file_put_contents($file, $output);
 
